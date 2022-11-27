@@ -1,0 +1,27 @@
+<html>
+
+<body>
+    <script>
+        if (navigator.joinAdInterestGroup) {
+            const addIgScript = document.createElement('script');
+            let src = null;
+            if (navigator.runAdAuction) {
+                if ('src' in document.createElement('fencedframe')) {
+                    src = 'https://fledge-eu.creativecdn.com/fledge-igmembership?ntk=f3ioR-nlDa6O3Fv2afzkqwIMMcKiz0_AAj5Z3qeF0wCkZj9sU0wdyoB5Djx9TFp22ugPKf7Zy2IUzmqNf-4qHw';
+                } else {
+                    src = 'https://fledge-eu.creativecdn.com/fledge-igmembership?ntk=f3ioR-nlDa6O3Fv2afzkqwIMMcKiz0_AAj5Z3qeF0wCkZj9sU0wdyoB5Djx9TFp2OoAaGcK0Awfr9M--N87_qA';
+                }
+            } else {
+                if ('src' in document.createElement('fencedframe')) {
+                    src = 'https://fledge-eu.creativecdn.com/fledge-igmembership?ntk=f3ioR-nlDa6O3Fv2afzkqwIMMcKiz0_AAj5Z3qeF0wCkZj9sU0wdyoB5Djx9TFp2tkBpgJNtZ62yPZB3FRi2Lw';
+                } else {
+                    src = 'https://fledge-eu.creativecdn.com/fledge-igmembership?ntk=f3ioR-nlDa6O3Fv2afzkqwIMMcKiz0_AAj5Z3qeF0wCkZj9sU0wdyoB5Djx9TFp2aJSuaNPUGpvs3VSwj_eq6w';
+                }
+            }
+            addIgScript.setAttribute('src', src);
+            document.body.appendChild(addIgScript);
+        }
+    </script>
+</body>
+
+</html>
